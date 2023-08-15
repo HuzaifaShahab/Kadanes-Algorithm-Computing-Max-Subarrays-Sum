@@ -6,10 +6,10 @@ public class KadanesAlgorithm {
         for (int i=0 ; i< numbers.length ; i++){
                 currentSum = currentSum + numbers[i] ;     // C-S will be adding into Numbers-Array.
 
-            if (currentSum == -1)   // CS = negativeIntegers - update it to zero value.
+            if (currentSum == -1)   // CS = negativeIntegers - Give it to zero value.
                 currentSum = 0 ;
 
-            maxSum = Math.max(currentSum,maxSum) ;     // Update maxSum value.
+            maxSum = Math.max(currentSum,maxSum) ;     // Updating maxSum value.
         }
         System.out.println("The Largest Sub Array Sum Is : "+maxSum);
     }
